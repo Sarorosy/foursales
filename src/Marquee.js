@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const MarQuee = () => {
   return (
@@ -6,10 +6,32 @@ const MarQuee = () => {
       <div className="marquee">
         <div className="marquee-content raleway">
           <span>
-            CHARACTER CREATION <i class="fas fa-star-of-life mx-2"></i> INCLUSIVE DESIGNS <i class="fas fa-star-of-life mx-2"></i> MURAL & GRAFFITI <i class="fas fa-star-of-life mx-2"></i> TOYS <i class="fas fa-star-of-life mx-2"></i> BRAND DEVELOPMENT <i class="fas fa-star-of-life mx-2"></i> PRODUCT DESIGN <i class="fas fa-star-of-life mx-2"></i> CHARACTER CREATION <i class="fas fa-star-of-life mx-2"></i> INCLUSIVE DESIGNS <i class="fas fa-star-of-life mx-2"></i> MURAL & GRAFFITI <i class="fas fa-star-of-life mx-2"></i> TOYS <i class="fas fa-star-of-life mx-2"></i> BRAND DEVELOPMENT <i class="fas fa-star-of-life mx-2"></i> PRODUCT DESIGN <i class="fas fa-star-of-life mx-2"></i>
+            INSTAGRAM RECOVERY <i class="fas fa-star-of-life mx-2"></i> ACCOUNT
+            SECURITY <i class="fas fa-star-of-life mx-2"></i> HACKED ACCOUNT
+            SUPPORT <i class="fas fa-star-of-life mx-2"></i> IMPERSONATION
+            REMOVAL <i class="fas fa-star-of-life mx-2"></i> DISABLED ACCOUNT
+            REACTIVATION <i class="fas fa-star-of-life mx-2"></i> PRIVACY
+            PROTECTION <i class="fas fa-star-of-life mx-2"></i> INSTAGRAM
+            RECOVERY <i class="fas fa-star-of-life mx-2"></i> ACCOUNT SECURITY{" "}
+            <i class="fas fa-star-of-life mx-2"></i> HACKED ACCOUNT SUPPORT{" "}
+            <i class="fas fa-star-of-life mx-2"></i> IMPERSONATION REMOVAL{" "}
+            <i class="fas fa-star-of-life mx-2"></i> DISABLED ACCOUNT
+            REACTIVATION <i class="fas fa-star-of-life mx-2"></i> PRIVACY
+            PROTECTION <i class="fas fa-star-of-life mx-2"></i>
           </span>
           <span>
-            CHARACTER CREATION <i class="fas fa-star-of-life mx-2"></i> INCLUSIVE DESIGNS <i class="fas fa-star-of-life mx-2"></i> MURAL & GRAFFITI <i class="fas fa-star-of-life mx-2"></i> TOYS <i class="fas fa-star-of-life mx-2"></i> BRAND DEVELOPMENT <i class="fas fa-star-of-life mx-2"></i> PRODUCT DESIGN <i class="fas fa-star-of-life mx-2"></i> CHARACTER CREATION <i class="fas fa-star-of-life mx-2"></i> INCLUSIVE DESIGNS <i class="fas fa-star-of-life mx-2"></i> MURAL & GRAFFITI <i class="fas fa-star-of-life mx-2"></i> TOYS <i class="fas fa-star-of-life mx-2"></i> BRAND DEVELOPMENT <i class="fas fa-star-of-life mx-2"></i> PRODUCT DESIGN <i class="fas fa-star-of-life mx-2"></i>
+            INSTAGRAM RECOVERY <i class="fas fa-star-of-life mx-2"></i> ACCOUNT
+            SECURITY <i class="fas fa-star-of-life mx-2"></i> HACKED ACCOUNT
+            SUPPORT <i class="fas fa-star-of-life mx-2"></i> IMPERSONATION
+            REMOVAL <i class="fas fa-star-of-life mx-2"></i> DISABLED ACCOUNT
+            REACTIVATION <i class="fas fa-star-of-life mx-2"></i> PRIVACY
+            PROTECTION <i class="fas fa-star-of-life mx-2"></i> INSTAGRAM
+            RECOVERY <i class="fas fa-star-of-life mx-2"></i> ACCOUNT SECURITY{" "}
+            <i class="fas fa-star-of-life mx-2"></i> HACKED ACCOUNT SUPPORT{" "}
+            <i class="fas fa-star-of-life mx-2"></i> IMPERSONATION REMOVAL{" "}
+            <i class="fas fa-star-of-life mx-2"></i> DISABLED ACCOUNT
+            REACTIVATION <i class="fas fa-star-of-life mx-2"></i> PRIVACY
+            PROTECTION <i class="fas fa-star-of-life mx-2"></i>
           </span>
         </div>
       </div>

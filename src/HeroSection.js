@@ -51,28 +51,26 @@ export default function HeroSection() {
             className="text-6xl md:text-[150px]  font-bold text-transparent absolute  -bottom-1 md:-bottom-3"
             style={{ WebkitTextStroke: "1px white" }}
           >
-            Street Art To Build
+            Get Back Your Instagram Handle
           </h1>
           <h1 className="text-6xl md:text-[150px]  font-bold text-white relative z-10">
-            Street Art To Build
+          Get Back Your Instagram Handle
           </h1>
         </div>
 
         <div className="flex flex-col-reverse md:flex-row items-center justify-center  md:mt-14">
           <p className="text-lg mt-10 md:mt-0 md:text-2xl mb-8 max-w-lg text-center md:text-left md:mr-8 raleway">
-            An art collective of worldwide talent, incorporating modern
-            stylistic designs to bring your brand and intellectual property to
-            the next level.
+          Recover your social presence and elevate your brand with global expertise in restoring your online identity.
           </p>
           <div className="relative slideanimate">
             <h1
-              className="text-6xl md:text-[150px] font-bold text-transparent absolute -bottom-1 md:-bottom-3"
+              className="text-6xl md:text-[80px] font-bold text-transparent absolute -bottom-1 md:-bottom-1"
               style={{ WebkitTextStroke: "1px white" }}
             >
-              Your Brand
+              Social Recoveries
             </h1>
-            <h1 className="text-6xl md:text-[150px] font-bold text-white relative z-10 transition-transform duration-300 ease-in-out hover:translate-x-3">
-              Your Brand
+            <h1 className="text-6xl md:text-[80px] font-bold text-white relative z-10 transition-transform duration-300 ease-in-out hover:translate-x-3">
+            Social Recoveries
             </h1>
           </div>
         </div>

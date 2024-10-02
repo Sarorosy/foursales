@@ -100,27 +100,19 @@ const AboutUs = () => {
             {/* Left side content */}
             <div className="text-white text-xl leading-relaxed md:px-8 flex flex-col raleway font-semibold justify-start items-center">
               <p className="font-bold">
-                We’re a leading art collective based in Kuala Lumpur, Malaysia &
-                Singapore, with our roots spread internationally.
+              We’re leading this agency to help in restoring your social handle
               </p>
               <br />
               <p>
-                Deriving from artists, we understand the difficulty in getting
-                your name or brand out there, the hardships you face to grow your
-                fan base or getting exposure, not even talking about getting paid
-                fairly for the work you do — which is a whole other ballgame in
-                itself.
+              Welcome to SocialRecoveries , where we specialize in reviving and restoring Instagram Accounts.
+              At SocialRecoveries, we understand the frustration and challenges that come with losing access to your Instagram account or experiencing a decline in engagement and visibility. That’s why we’re here to provide personalized solutions tailored to your specific needs.
               </p>
               <br />
               <p>
-                That is where 4-Stages can help. We will help build and groom you
-                & your IP alongside you, design creative campaigns with global
-                brands, and create exposure and networking opportunities so your
-                name and brand can grow and get more international recognition. We
-                bring the business to you instead of the other way around.
+              Whether you’ve been locked out of your account, fallen victim to hacking, we have the tools and expertise to help you regain control and reignite your presence on Instagram
+              Get in touch with us today and let’s embark on this journey together.
               </p>
               <br />
-              <p>Our mission is to empower all artists and creatives.</p>
             </div>
 
             {/* Right side video with mask */}

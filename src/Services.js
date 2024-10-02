@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import serv1 from './assets/serv1.webp';
-import serv2 from './assets/serv2.webp';
-import serv3 from './assets/serv3.webp';
-import serv4 from './assets/serv4.webp';
-import bgimage from './assets/wallpaper.jpg';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useEffect, useRef } from "react";
+import serv1 from "./assets/serv1.png";
+import serv2 from "./assets/serv2.png";
+import serv3 from "./assets/serv3.png";
+import serv4 from "./assets/serv4.png";
+import bgimage from "./assets/wallpaper.jpg";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -18,10 +18,11 @@ const Services = () => {
       serviceRefs.current.forEach((ref, index) => {
         const direction = index < 2 ? -100 : 100; // Left for first two, right for second two
 
-        gsap.fromTo(ref, 
+        gsap.fromTo(
+          ref,
           {
             opacity: 0,
-            x: direction, 
+            x: direction,
           },
           {
             opacity: 1,
@@ -33,7 +34,8 @@ const Services = () => {
               scrub: true, // Smooth scrubbing
               onLeaveBack: () => gsap.to(ref, { opacity: 0, x: direction }), // Back to original on scroll up
             },
-          });
+          }
+        );
       });
     });
 
@@ -41,7 +43,7 @@ const Services = () => {
   }, []);
 
   const backgroundSize =
-    window.innerWidth >= 768 ? 'calc(100% * 1.3)' : 'cover';
+    window.innerWidth >= 768 ? "calc(100% * 1.3)" : "cover";
   return (
     <div
       className="py-10 md:py-20 services-section"
@@ -49,7 +51,7 @@ const Services = () => {
         backgroundImage: `url(${bgimage})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundSize: backgroundSize
+        backgroundSize: backgroundSize,
       }}
     >
       <div className="container mx-auto text-center">
@@ -60,10 +62,12 @@ const Services = () => {
               className={`text-3xl md:text-[70px] font-bold bottom-1 md:bottom-3 text-transparent absolute inset-0 flex items-center justify-center transition-transform duration-500 ease-in-out`}
               style={{ WebkitTextStroke: "0.5px white" }}
             >
-              4-Stages Specializes in the <br /><br /> Following Services:
+              4-Stages Specializes in the <br />
+              <br /> Following Services:
             </h1>
             <h1 className="text-3xl md:text-[70px] font-bold text-white relative z-20">
-              4-Stages Specializes in the <br /><br /> Following Services:
+              4-Stages Specializes in the <br />
+              <br /> Following Services:
             </h1>
           </div>
         </div>
@@ -74,18 +78,30 @@ const Services = () => {
         </p>
 
         {/* Grid layout for services */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-          <div className="flex justify-center" ref={(el) => (serviceRefs.current[0] = el)}>
-            <img src={serv1} alt="Service 1" className="w-96 h-auto max-w-[250px] md:max-w-[400px]" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 max-w-6xl mx-auto">
+          <div className="bg-black bg-opacity-50 border border-gray-300 rounded-lg shadow-lg py-4 px-4 flex flex-col items-center">
+            <img src={serv1} alt="Service 1" className="w-32 h-32 mb-4" />
+            <h3 className="text-lg font-semibold text-white">
+              Instagram Account Recovery
+            </h3>
           </div>
-          <div className="flex justify-center" ref={(el) => (serviceRefs.current[1] = el)}>
-            <img src={serv2} alt="Service 2" className="w-96 h-auto max-w-[250px] md:max-w-[400px]" />
+          <div className="bg-black bg-opacity-50 border border-gray-300 rounded-lg shadow-lg py-4 px-4 flex flex-col items-center">
+            <img src={serv2} alt="Service 2" className="w-32 h-32 mb-4" />
+            <h3 className="text-lg font-semibold text-white">
+              Hacked Account Recovery
+            </h3>
           </div>
-          <div className="flex justify-center" ref={(el) => (serviceRefs.current[2] = el)}>
-            <img src={serv3} alt="Service 3" className="w-96 h-auto max-w-[250px] md:max-w-[400px]" />
+          <div className="bg-black bg-opacity-50 border border-gray-300 rounded-lg shadow-lg py-4 px-4 flex flex-col items-center">
+            <img src={serv3} alt="Service 3" className="w-32 h-32 mb-4" />
+            <h3 className="text-lg font-semibold text-white">
+              Impersonation Removal
+            </h3>
           </div>
-          <div className="flex justify-center" ref={(el) => (serviceRefs.current[3] = el)}>
-            <img src={serv4} alt="Service 4" className="w-96 h-auto max-w-[250px] md:max-w-[400px]" />
+          <div className="bg-black bg-opacity-50 border border-gray-300 rounded-lg shadow-lg py-4 px-4 flex flex-col items-center">
+            <img src={serv4} alt="Service 4" className="w-32 h-32 mb-4" />
+            <h3 className="text-lg font-semibold text-white">
+              Disabled Account Restoration
+            </h3>
           </div>
         </div>
       </div>

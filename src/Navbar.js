@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ShoppingBag, Rocket, Menu, X } from 'lucide-react'; // Menu and X icons for mobile
-import logo from './assets/4stages-logo-white-1-scaled.jpg';
+import logo from './assets/logo.jpeg';
 
 export default function Navbar() {
   const [hovered, setHovered] = useState('');
@@ -22,7 +22,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
-          {['SERVICES', 'ABOUT', 'CLIENTS', 'SHOP'].map((item) => (
+          {['SERVICES', 'ABOUT', 'CLIENTS',].map((item) => (
             <div
               key={item}
               className="relative py-2"
@@ -92,7 +92,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex flex-col items-start mt-8 space-y-4">
-            {['SERVICES', 'ABOUT', 'CLIENTS', 'SHOP'].map((item) => (
+            {['SERVICES', 'ABOUT', 'CLIENTS', ].map((item) => (
                 <>
               <a
                 key={item}
