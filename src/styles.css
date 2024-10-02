@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  background-color: black;
+  overflow-x: hidden;
+}
+.raleway{
+    font-family: "Raleway",sans-serif;
+}
+
+/* CSS for the slide-in and fade-in animation */
+@keyframes slideIn {
+    from {
+      transform: translateY(-50px); /* Start 50px above the original position */
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      transform: translateY(0); /* End at the original position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  /* Apply the animation class */
+  .slideanimate {
+    animation: slideIn 0.8s ease forwards; /* Duration and easing */
+  }
+  
+
+  /* Container for the marquee */
+.marquee-container {
+    background-color: white;
+    color: black;
+    overflow: hidden;  /* Ensures content doesn't go beyond the container */
+    white-space: nowrap;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  /* Marquee wrapper */
+  .marquee {
+    display: flex;
+    justify-content: flex-start; /* Align items at the start */
+    overflow: hidden;
+  }
+  
+  /* Marquee content for scrolling */
+  .marquee-content {
+    display: flex;
+    animation: marquee-scroll 30s linear infinite; /* Adjust speed here */
+  }
+  
+  /* Each text span gets equal space and padding */
+  .marquee-content span {
+    display: inline-block;
+    padding-right: 50px; /* Adjust space between items */
+  }
+  
+  /* Infinite scroll animation from right to left */
+  @keyframes marquee-scroll {
+    0% {
+      transform: translateX(0); /* Start from left edge of the container */
+    }
+    100% {
+      transform: translateX(-100%); /* Shift the entire content to the left completely */
+    }
+  }
+  
