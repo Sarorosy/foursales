@@ -37,7 +37,7 @@ const OurClients = () => {
   return (
     <div
       
-      className=" bg-black text-black p-4 md:p-8 mx-auto w-full mx-4"
+      className=" bg-black text-black p-4 md:p-8 mx-auto w-full mx-4 overflow-x-hidden"
     >
       <div className="relative mb-4 md:mb-8">
         <h1
