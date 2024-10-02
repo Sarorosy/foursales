@@ -2,7 +2,10 @@
 
 body{
   background-color: black;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+*{
+  overflow-x: hidden !important;
 }
 .raleway{
     font-family: "Raleway",sans-serif;
