@@ -91,7 +91,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="container mx-auto py-8" id="gallery">
+    <div className="container mx-auto py-8" id="gallery" style={{overflowX:"hidden"}}>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4" id="gcard">
         <div className="flex justify-center">
           <img src={one} alt="Image 1" className="object-cover w-full h-auto rounded-md" />

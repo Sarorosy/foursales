@@ -78,7 +78,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Sidebar */}
         <div
-          className={`fixed top-0 left-0 h-full w-[90%] bg-black text-white z-50 transform transition-transform duration-300 ease-in-out ${
+          className={`fixed top-0 left-0 h-full w-full bg-black text-white z-50 transform transition-transform duration-300 ease-in-out ${
             isMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
         >

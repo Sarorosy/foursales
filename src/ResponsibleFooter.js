@@ -5,7 +5,7 @@ const ResponsibleFooter = () => {
     <footer className="bg-black text-white">
       <div className=" mx-auto ">
         <div className=" border-b-2 border-white border-t-2 py-4 font-semibold  px-2 md:px-8">
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4">
             <div className="flex space-x-4">
               <a href="#" className="hover:text-gray-300" aria-label="Twitter">
                 <Twitter size={20} />
