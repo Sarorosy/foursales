@@ -33,8 +33,8 @@ const Services = () => {
             x: 0,
             scrollTrigger: {
               trigger: ref,
-              start: "top center",
-              end: "center top",
+              start: "top bottom",
+              end: "bottom center",
               scrub: true,
               onLeaveBack: () => gsap.to(ref, { opacity: 0, x: direction }),
             },
