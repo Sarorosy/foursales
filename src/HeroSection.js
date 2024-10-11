@@ -26,6 +26,10 @@ export default function HeroSection() {
     return () => ctx.revert(); // Clean up on unmount
   }, []);
 
+  const isMobile = () => {
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  };
+
   return (
     <div className="relative w-full h-screen">
       {/* Background video */}
@@ -34,7 +38,7 @@ export default function HeroSection() {
           className="min-w-full min-h-full absolute object-cover"
           style={{ width: "100%" }}
           src={bgvideo}
-          autoPlay
+          autoPlay={!isMobile()}
           loop
           muted
           playsInline
@@ -45,8 +49,9 @@ export default function HeroSection() {
       <div className="absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-[#000000a0] to-[#1032489c] bg-opacity-70"></div>
 
       {/* Overlay content */}
-      <div className="relative z-10 flex flex-col items-center justify-start h-full text-white text-center px-4 ">
-        <div className="relative mt-14 md:mt-2 slideanimate">
+      <div className="relative z-10 flex flex-col items-center justify-start h-full text-white md:text-center px-4 ">
+        <div>
+        <div className="hidden md:block relative mt-14 md:mt-2 slideanimate">
           <h1
             className="text-6xl md:text-[150px]  font-bold text-transparent absolute  -bottom-1 md:-bottom-3"
             style={{ WebkitTextStroke: "1px white" }}
@@ -57,12 +62,17 @@ export default function HeroSection() {
           Get Back Your Instagram Handle
           </h1>
         </div>
+        <h1 className="md:hidden text-5xl font-bold slideanimate text-white text-left">
+        Get Back Your Instagram Handle
+          </h1>
+          </div>
 
         <div className="flex flex-col-reverse md:flex-row items-center justify-center  md:mt-14">
           <p className="text-lg mt-10 md:mt-0 md:text-2xl mb-8 max-w-lg text-center md:text-left md:mr-8 raleway">
           Recover your social presence and elevate your brand with global expertise in restoring your online identity.
           </p>
-          <div className="relative slideanimate">
+         <div>
+         <div className="hidden md:block relative slideanimate">
             <h1
               className="text-6xl md:text-[80px] font-bold text-transparent absolute -bottom-1 md:-bottom-1"
               style={{ WebkitTextStroke: "1px white" }}
@@ -73,6 +83,10 @@ export default function HeroSection() {
             Social Recoveries
             </h1>
           </div>
+          <h1 className="md:hidden text-5xl font-bold slideanimate text-white text-left">
+            Social Recoveries
+          </h1>
+         </div>
         </div>
 
         {/* Image with fade-out effect */}

@@ -2,17 +2,17 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import one from "./assets/one.jpg";
-import two from "./assets/two.webp";
-import three from "./assets/three.jpg";
-import four from "./assets/four.jpg";
-import five from "./assets/five.png";
+import one from "./assets/one.jpeg";
+import two from "./assets/two.jpeg";
+import three from "./assets/three.jpeg";
+import four from "./assets/four.jpeg";
+import five from "./assets/five.jpeg";
 
-import six from './assets/six.webp';
-import seven from './assets/seven.png';
-import eight from './assets/eight.webp';
-import nine from './assets/nine.png';
-import ten from './assets/ten.jpg';
+import six from './assets/six.jpeg';
+import seven from './assets/seven.jpeg';
+import eight from './assets/eight.jpeg';
+import nine from './assets/nine.jpeg';
+import ten from './assets/ten.mp4';
 
 gsap.registerPlugin(ScrollTrigger);
 

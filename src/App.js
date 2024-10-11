@@ -19,11 +19,8 @@ function App() {
       <Navbar />
       <HeroSection />
       <Services />
-      
       <AboutUs />
       <Gallery />
-      <ArtistShowcase />
-      <OurClients />
       <ContactForm />
       <ResponsibleFooter />
     </div>
