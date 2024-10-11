@@ -17,7 +17,17 @@ import LeadCaptureModal from './LeadCaptureModal';
 
 function App() {
 
-  const [isModalOpen, setModalOpen] = useState(true);
+  const [isModalOpen, setModalOpen] = useState(false); // Initially set to false
+
+  useEffect(() => {
+    // Set a timer to open the modal after 5 seconds
+    const timer = setTimeout(() => {
+      setModalOpen(true);
+    }, 5000);
+
+    // Cleanup the timer on unmount
+    return () => clearTimeout(timer);
+  }, []);
 
   const closeModal = () => setModalOpen(false);
 
