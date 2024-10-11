@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './output.css';
 import './styles.css';
@@ -12,8 +13,14 @@ import ArtistShowcase from './ArtistShowcase';
 import OurClients from './OurClients';
 import ContactForm from './ContactForm';
 import ResponsibleFooter from './ResponsibleFooter';
+import LeadCaptureModal from './LeadCaptureModal';
 
 function App() {
+
+  const [isModalOpen, setModalOpen] = useState(true);
+
+  const closeModal = () => setModalOpen(false);
+
   return (
     <div className="">
       <Navbar />
@@ -23,6 +30,7 @@ function App() {
       <Gallery />
       <ContactForm />
       <ResponsibleFooter />
+      <LeadCaptureModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 }

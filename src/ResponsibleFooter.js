@@ -31,7 +31,7 @@ const ResponsibleFooter = () => {
           </div>
         </div>
         <div className="flex justify-between items-center text-sm px-3 md:px-8 py-3">
-          <div>© Copyright {new Date().getFullYear()} foursales</div>
+          <div>© Copyright {new Date().getFullYear()} Social Recoveries</div>
           <div className="space-x-4"></div>
         </div>
       </div>
