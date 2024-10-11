@@ -32,7 +32,7 @@ function App() {
   const closeModal = () => setModalOpen(false);
 
   return (
-    <div className="">
+    <div className="mainsection w-full overflow-x-hidden ">
       <Navbar />
       <HeroSection />
       <Services />

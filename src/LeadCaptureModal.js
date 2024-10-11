@@ -1,14 +1,14 @@
-// LeadCaptureModal.js
 import React, { useState } from 'react';
 
 const LeadCaptureModal = ({ isOpen, onClose }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here (e.g., send data to a server)
-    console.log('Lead captured:', { name, email });
+    console.log('Lead captured:', { name, email, phone });
     onClose(); // Close the modal after submission
   };
 
@@ -18,7 +18,7 @@ const LeadCaptureModal = ({ isOpen, onClose }) => {
       style={{ zIndex: 1000 }}
     >
       <div className="bg-white rounded-lg p-6 max-w-sm w-full">
-        <h2 className="text-xl font-bold mb-4">Capture Leads</h2>
+        <h2 className="text-xl font-bold mb-4">Let’s Get to Know You!</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block mb-1">Name</label>
@@ -40,14 +40,24 @@ const LeadCaptureModal = ({ isOpen, onClose }) => {
               className="w-full border border-gray-300 rounded p-2"
             />
           </div>
+          <div className="mb-4">
+            <label className="block mb-1">Phone</label>
+            <input
+              type="tel"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+              className="w-full border border-gray-300 rounded p-2"
+            />
+          </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white rounded p-2"
+            className="w-full bg-black text-white rounded p-2"
           >
             Submit
           </button>
         </form>
-        <button onClick={onClose} className="mt-4 text-blue-500">
+        <button onClick={onClose} className="mt-4 text-red-700 font-bold">
           Close
         </button>
       </div>
