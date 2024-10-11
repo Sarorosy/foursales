@@ -22,7 +22,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
-          {['SERVICES', 'ABOUT', 'CLIENTS',].map((item) => (
+          {['ABOUT US', 'CONTACT US', 'PRIVACY POLICY', 'TERMS OF SERVICE'].map((item) => (
             <div
               key={item}
               className="relative py-2"
@@ -92,7 +92,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex flex-col items-start mt-8 space-y-4">
-            {['SERVICES', 'ABOUT', 'CLIENTS', ].map((item) => (
+            {['ABOUT US', 'CONTACT US', 'PRIVACY POLICY', 'TERMS OF SERVICE'].map((item) => (
                 <>
               <a
                 key={item}

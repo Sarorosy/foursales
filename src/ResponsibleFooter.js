@@ -23,7 +23,7 @@ const ResponsibleFooter = () => {
             </div>
             <div className="flex items-center">
               <Mail size={20} className="mr-2" />
-              <span>info@yourcompany.com</span>
+              <span>business.socialrecoveries@gmail.com</span>
             </div>
             <div>
               <span>Malaysia | Singapore</span>
