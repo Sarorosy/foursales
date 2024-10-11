@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import bgvideo from "./assets/herobgvideo.mp4";
 import visualimg from './assets/visual3.png';
+import bannerbg from './assets/web-banner.jpg';
 
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -33,7 +34,7 @@ export default function HeroSection() {
   return (
     <div className="relative w-full h-screen">
       {/* Background video */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+      <div className="hidden md:block absolute top-0 left-0 w-full h-full overflow-hidden">
         <video
           className="min-w-full min-h-full absolute object-cover"
           style={{ width: "100%" }}
@@ -44,6 +45,15 @@ export default function HeroSection() {
           playsInline
         />
       </div>
+      <div className="md:hidden absolute top-0 left-0 w-full h-screen overflow-hidden">
+  <img
+    src={bannerbg}
+    alt="banner social recoveries h-screen"
+    className="w-full h-full object-cover"
+    style={{ objectFit: "cover", objectPosition: "center" }} // Center the image
+  />
+</div>
+
 
       {/* Dark overlay */}
       <div className="absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-[#000000a0] to-[#1032489c] bg-opacity-70"></div>
@@ -62,13 +72,13 @@ export default function HeroSection() {
           Get Back Your Instagram Handle
           </h1>
         </div>
-        <h1 className="md:hidden text-5xl font-bold slideanimate text-white text-left">
+        <h1 className="md:hidden mt-10 text-5xl font-bold slideanimate text-white text-left">
         Get Back Your Instagram Handle
           </h1>
           </div>
 
         <div className="flex flex-col-reverse md:flex-row items-center justify-center  md:mt-14">
-          <p className="text-lg mt-10 md:mt-0 md:text-2xl mb-8 max-w-lg text-center md:text-left md:mr-8 raleway">
+          <p className="text-lg mt-10 md:mt-0 md:text-2xl mb-8 max-w-lg text-left md:text-center md:text-left md:mr-8 raleway">
           Recover your social presence and elevate your brand with global expertise in restoring your online identity.
           </p>
          <div>
