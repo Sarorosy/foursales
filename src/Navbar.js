@@ -91,7 +91,7 @@ export default function Navbar() {
             <X className="h-8 w-8 cursor-pointer" onClick={toggleMenu} />
           </div>
 
-          <div className="flex flex-col items-start mt-8 space-y-4">
+          <div className="flex flex-col items-start mt-8 space-y-4 ml-8">
             {['ABOUT US', 'CONTACT US', 'PRIVACY POLICY', 'TERMS OF SERVICE'].map((item) => (
                 <>
               <a
@@ -107,7 +107,7 @@ export default function Navbar() {
               </>
             ))}
             <button
-              className="bg-white text-black px-6 py-3 text-lg flex items-center ml-8 space-x-3 border border-black hover:scale-75 hover:bg-black hover:text-white hover:border-white transition-transform duration-300 ease-in-out"
+              className="bg-white text-black px-6 py-3 text-lg flex items-center space-x-3 border border-black hover:scale-75 hover:bg-black hover:text-white hover:border-white transition-transform duration-300 ease-in-out"
               style={{ boxShadow: '4px 4px 0px white' }}
             >
               <Rocket className="h-5 w-5" />

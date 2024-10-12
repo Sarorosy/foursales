@@ -23,7 +23,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center">
+    <div className="relative md:min-h-screen flex items-center justify-center">
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
@@ -36,7 +36,7 @@ export default function ContactForm() {
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       {/* Form Container */}
       <div className="relative z-10 w-full max-w-5xl p-8">
-      <div className="relative mb-4">
+      <div className="hidden md:block relative mb-4">
             <h1
               className="text-6xl md:text-[70px] font-bold text-transparent absolute -bottom-1 md:-bottom-2"
               style={{ WebkitTextStroke: "1px white" }}
@@ -47,8 +47,11 @@ export default function ContactForm() {
               Interested? Drop Us a Line
             </h1>
           </div>
+          <h1 className="md:hidden mt-10 text-5xl font-bold slideanimate text-white text-left ml-8 mb-10 ">
+          Interested? Drop Us a Line
+          </h1>
           <form onSubmit={handleSubmit} className="space-y-6">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-3">
+  <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6 md:mb-3">
     <input
       type="text"
       name="name"
@@ -74,7 +77,7 @@ export default function ContactForm() {
     value={formData.message}
     onChange={handleChange}
     rows={3}
-    className="bg-black w-full p-4 my-3 border-b-2 border-white text-white placeholder-white focus:outline-none focus:border-blue-300 resize-none"
+    className="bg-black w-full p-4 my-1 md:my-3 border-b-2 border-white text-white placeholder-white focus:outline-none focus:border-blue-300 resize-none"
     required style={{marginBottom:"20px"}}
   ></textarea>
   <button

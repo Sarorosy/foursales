@@ -77,7 +77,7 @@ const AboutUs = () => {
 
         {/* Flex container with two child divs */}
         <div className="z-10">
-          <div className="relative ml-8 mt-8" id="abouth1">
+          <div className=" hidden md:block relative ml-8 mt-8" id="abouth1">
             <h1
               className="text-6xl md:text-[90px] font-bold text-transparent absolute -bottom-1 md:-bottom-2"
               style={{ WebkitTextStroke: "1px white" }}
@@ -91,6 +91,9 @@ const AboutUs = () => {
               About Us
             </h1>
           </div>
+          <h1 className="md:hidden mt-10 text-5xl font-bold slideanimate text-white text-left ml-8">
+          About Us
+          </h1>
 
           <div
             className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:px-16"

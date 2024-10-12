@@ -73,7 +73,7 @@ export default function HeroSection() {
           </h1>
         </div>
         <h1 className="md:hidden mt-10 text-5xl font-bold slideanimate text-white text-left">
-        Get Back Your Instagram Handle
+        Get Back Your Instagram Handle Social Recoveries
           </h1>
           </div>
 
@@ -93,9 +93,7 @@ export default function HeroSection() {
             Social Recoveries
             </h1>
           </div>
-          <h1 className="md:hidden text-5xl font-bold slideanimate text-white text-left">
-            Social Recoveries
-          </h1>
+          
          </div>
         </div>
 
