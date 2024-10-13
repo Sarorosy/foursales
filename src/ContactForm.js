@@ -23,7 +23,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="relative md:min-h-screen flex items-center justify-center">
+    <div className="relative md:min-h-screen flex items-center justify-center" id='contact us'>
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
@@ -58,8 +58,8 @@ export default function ContactForm() {
       placeholder="Name"
       value={formData.name}
       onChange={handleChange}
-      className="bg-black w-full p-4 border-b-2 border-white text-white placeholder-white focus:outline-none focus:border-blue-300"
-      required style={{margin:"20px 0"}}
+      className="bg-black my-2 md:my-3 w-full p-4 border-b-2 border-white text-white placeholder-white focus:outline-none focus:border-blue-300"
+      required 
     />
     <input
       type="email"
@@ -67,8 +67,8 @@ export default function ContactForm() {
       placeholder="Email"
       value={formData.email}
       onChange={handleChange}
-      className="bg-black w-full p-4 border-b-2 border-white text-white placeholder-white focus:outline-none focus:border-blue-300"
-      required style={{margin:"20px 0"}}
+      className="bg-black my-2 md:my-3 w-full p-4 border-b-2 border-white text-white placeholder-white focus:outline-none focus:border-blue-300"
+      required 
     />
   </div>
   <textarea
@@ -77,8 +77,8 @@ export default function ContactForm() {
     value={formData.message}
     onChange={handleChange}
     rows={3}
-    className="bg-black w-full p-4 my-1 md:my-3 border-b-2 border-white text-white placeholder-white focus:outline-none focus:border-blue-300 resize-none"
-    required style={{marginBottom:"20px"}}
+    className="bg-black my-2 md:my-3 w-full p-4  md:my-3 border-b-2 border-white text-white placeholder-white focus:outline-none focus:border-blue-300 resize-none"
+    required 
   ></textarea>
   <button
     type="submit"

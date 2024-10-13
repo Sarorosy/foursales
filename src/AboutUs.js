@@ -56,12 +56,12 @@ const AboutUs = () => {
   return (
     <>
       <MarQuee />
-      <div className="relative transform rotate-[-3deg] bg-black text-center border-b-2 border-white border-t-2 py-4">
+      <div className="relative transform rotate-[-3deg] bg-black text-center border-b-2 border-white border-t-2 py-4" id="about us">
         <h1
           className="text-white text-3xl md:text-5xl font-semibold whitespace-nowrap"
           ref={aboutHeaderRef}
         >
-          4 STAGES ART COLLECTIVE
+          SOCIAL RECOVERIES
         </h1>
       </div>
       <div

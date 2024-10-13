@@ -111,7 +111,7 @@ const Services = () => {
         <div className="relative mt-14 md:mt-3">
           <div className="relative z-10">
             <h1 className="text-3xl md:text-[70px] font-bold text-white relative z-20">
-              4-Stages Specializes in the Following Services:
+              Social recoveries Specializes in the Following Services:
             </h1>
           </div>
         </div>
