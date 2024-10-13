@@ -23,7 +23,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="relative md:min-h-screen flex items-center justify-center" id='contact us'>
+    <div className="relative md:min-h-screen flex items-center justify-center" id='contact-us'>
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
