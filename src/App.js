@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './output.css';
 import './styles.css';
@@ -14,6 +15,7 @@ import OurClients from './OurClients';
 import ContactForm from './ContactForm';
 import ResponsibleFooter from './ResponsibleFooter';
 import LeadCaptureModal from './LeadCaptureModal';
+import PrivacyPolicy from './PrivacyPolicy';
 
 function App() {
 
@@ -32,16 +34,26 @@ function App() {
   const closeModal = () => setModalOpen(false);
 
   return (
-    <div className="mainsection w-full overflow-x-hidden ">
-      <Navbar />
-      <HeroSection />
-      <Services />
-      <AboutUs />
-      <Gallery />
-      <ContactForm />
-      <ResponsibleFooter />
-      <LeadCaptureModal isOpen={isModalOpen} onClose={closeModal} />
-    </div>
+    <Router>
+      <div className="mainsection w-full overflow-x-hidden">
+        <Routes>
+          {/* Define the routes for the application */}
+          <Route path="/" element={
+            <>
+              <Navbar />
+              <HeroSection />
+              <Services />
+              <AboutUs />
+              <Gallery />
+              <ContactForm />
+              <ResponsibleFooter />
+            </>
+          } />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Routes>
+        <LeadCaptureModal isOpen={isModalOpen} onClose={closeModal} />
+      </div>
+    </Router>
   );
 }
 

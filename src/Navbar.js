@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="bg-black text-white p-4 md:py-8 md:px-8 overflow-y-hidden border-b-2 border-white">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="text-2xl font-bold">
+        <a href="https://foursales.vercel.app" className="text-2xl font-bold">
           <img 
             src={logo} 
             alt="logo" 
@@ -22,41 +22,73 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
-          {['ABOUT US', 'CONTACT US', 'PRIVACY POLICY', 'TERMS OF SERVICE'].map((item) => (
-            <div
-              key={item}
-              className="relative py-2"
-              onMouseEnter={() => setHovered(item)}
-              onMouseLeave={() => setHovered('')}
+          <div
+            className="relative py-2"
+            onMouseEnter={() => setHovered('ABOUT US')}
+            onMouseLeave={() => setHovered('')}
+          >
+            <div className="w-full h-[1px] bg-white" />
+            <a
+              href="https://foursales.vercel.app/#about-us"
+              className="hover:text-gray-300 transition-colors raleway font-semibold"
             >
-              {/* Static div at the top of each link */}
-              <div className="w-full h-[1px] bg-white" />
-              
-              <a 
-                href={`#${item.toLowerCase()}`} 
-                className="hover:text-gray-300 transition-colors raleway font-semibold"
-              >
-                {item}
-              </a>
+              ABOUT US
+            </a>
+            <div className="w-full h-[1px] bg-white" />
+            <div className={`absolute w-full h-[1px] bg-white transition-all duration-300 ease-in-out ${hovered === 'ABOUT US' ? 'top-[18%]' : 'top-[-120%]'}`} />
+            <div className={`absolute w-full h-[1px] bg-white transition-all duration-300 ease-in-out ${hovered === 'ABOUT US' ? 'bottom-[18%]' : 'bottom-[-120%]'}`} />
+          </div>
 
-              {/* Static div at the bottom of each link */}
-              <div className="w-full h-[1px] bg-white" />
+          <div
+            className="relative py-2"
+            onMouseEnter={() => setHovered('CONTACT US')}
+            onMouseLeave={() => setHovered('')}
+          >
+            <div className="w-full h-[1px] bg-white" />
+            <a
+              href="https://foursales.vercel.app/#contact-us"
+              className="hover:text-gray-300 transition-colors raleway font-semibold"
+            >
+              CONTACT US
+            </a>
+            <div className="w-full h-[1px] bg-white" />
+            <div className={`absolute w-full h-[1px] bg-white transition-all duration-300 ease-in-out ${hovered === 'CONTACT US' ? 'top-[18%]' : 'top-[-120%]'}`} />
+            <div className={`absolute w-full h-[1px] bg-white transition-all duration-300 ease-in-out ${hovered === 'CONTACT US' ? 'bottom-[18%]' : 'bottom-[-120%]'}`} />
+          </div>
 
-              {/* Dynamic div (absolute) at the top of each link */}
-              <div 
-                className={`absolute w-full h-[1px] bg-white transition-all duration-300 ease-in-out ${
-                  hovered === item ? 'top-[18%]' : 'top-[-120%]'
-                }`}
-              />
-              
-              {/* Dynamic div (absolute) at the bottom of each link */}
-              <div 
-                className={`absolute w-full h-[1px] bg-white transition-all duration-300 ease-in-out ${
-                  hovered === item ? 'bottom-[18%]' : 'bottom-[-120%]'
-                }`}
-              />
-            </div>
-          ))}
+          <div
+            className="relative py-2"
+            onMouseEnter={() => setHovered('PRIVACY POLICY')}
+            onMouseLeave={() => setHovered('')}
+          >
+            <div className="w-full h-[1px] bg-white" />
+            <a
+              href="https://foursales.vercel.app/privacy-policy"
+              className="hover:text-gray-300 transition-colors raleway font-semibold"
+            >
+              PRIVACY POLICY
+            </a>
+            <div className="w-full h-[1px] bg-white" />
+            <div className={`absolute w-full h-[1px] bg-white transition-all duration-300 ease-in-out ${hovered === 'PRIVACY POLICY' ? 'top-[18%]' : 'top-[-120%]'}`} />
+            <div className={`absolute w-full h-[1px] bg-white transition-all duration-300 ease-in-out ${hovered === 'PRIVACY POLICY' ? 'bottom-[18%]' : 'bottom-[-120%]'}`} />
+          </div>
+
+          <div
+            className="relative py-2"
+            onMouseEnter={() => setHovered('TERMS OF SERVICE')}
+            onMouseLeave={() => setHovered('')}
+          >
+            <div className="w-full h-[1px] bg-white" />
+            <a
+              href="https://foursales.vercel.app/terms-of-service"
+              className="hover:text-gray-300 transition-colors raleway font-semibold"
+            >
+              TERMS OF SERVICE
+            </a>
+            <div className="w-full h-[1px] bg-white" />
+            <div className={`absolute w-full h-[1px] bg-white transition-all duration-300 ease-in-out ${hovered === 'TERMS OF SERVICE' ? 'top-[18%]' : 'top-[-120%]'}`} />
+            <div className={`absolute w-full h-[1px] bg-white transition-all duration-300 ease-in-out ${hovered === 'TERMS OF SERVICE' ? 'bottom-[18%]' : 'bottom-[-120%]'}`} />
+          </div>
         </div>
 
         {/* Contact Us Button */}
@@ -92,20 +124,42 @@ export default function Navbar() {
           </div>
 
           <div className="flex flex-col items-start mt-8 space-y-4 ml-8">
-            {['ABOUT US', 'CONTACT US', 'PRIVACY POLICY', 'TERMS OF SERVICE'].map((item) => (
-                <>
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-2xl hover:text-gray-300 transition-colors raleway font-semibold"
-                onClick={toggleMenu} // Close the menu when a link is clicked
-              >
-                {item}
-              </a>
-              <hr className="w-full h-1 bg-gray-800 border-none my-2" />
+            <a
+              href="https://foursales.vercel.app/#about-us"
+              className="text-2xl hover:text-gray-300 transition-colors raleway font-semibold"
+              onClick={toggleMenu} // Close the menu when a link is clicked
+            >
+              ABOUT US
+            </a>
+            <hr className="w-full h-1 bg-gray-800 border-none my-2" />
 
-              </>
-            ))}
+            <a
+              href="https://foursales.vercel.app/#contact-us"
+              className="text-2xl hover:text-gray-300 transition-colors raleway font-semibold"
+              onClick={toggleMenu} // Close the menu when a link is clicked
+            >
+              CONTACT US
+            </a>
+            <hr className="w-full h-1 bg-gray-800 border-none my-2" />
+
+            <a
+              href="https://foursales.vercel.app/privacy-policy"
+              className="text-2xl hover:text-gray-300 transition-colors raleway font-semibold"
+              onClick={toggleMenu} // Close the menu when a link is clicked
+            >
+              PRIVACY POLICY
+            </a>
+            <hr className="w-full h-1 bg-gray-800 border-none my-2" />
+
+            <a
+              href="https://foursales.vercel.app/terms-of-service"
+              className="text-2xl hover:text-gray-300 transition-colors raleway font-semibold"
+              onClick={toggleMenu} // Close the menu when a link is clicked
+            >
+              TERMS OF SERVICE
+            </a>
+            <hr className="w-full h-1 bg-gray-800 border-none my-2" />
+
             <button
               className="bg-white text-black px-6 py-3 text-lg flex items-center space-x-3 border border-black hover:scale-75 hover:bg-black hover:text-white hover:border-white transition-transform duration-300 ease-in-out"
               style={{ boxShadow: '4px 4px 0px white' }}
