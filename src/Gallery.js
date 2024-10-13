@@ -129,7 +129,7 @@ const Gallery = () => {
             <img src={nine} alt="Image 9" className="object-cover w-full h-auto rounded-md" />
           </div>
           <div className="flex justify-center hidden md:block">
-            <img src={ten} alt="Image 10" className="object-cover w-full h-auto rounded-md " />
+            <img src={one} alt="Image 10" className="object-cover w-full h-auto rounded-md " />
           </div>
         </div>
       </div>
