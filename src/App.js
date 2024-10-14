@@ -16,6 +16,7 @@ import ContactForm from './ContactForm';
 import ResponsibleFooter from './ResponsibleFooter';
 import LeadCaptureModal from './LeadCaptureModal';
 import PrivacyPolicy from './PrivacyPolicy';
+import TermsOfService from './TermsOfService';
 
 function App() {
 
@@ -50,6 +51,7 @@ function App() {
             </>
           } />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
         </Routes>
         <LeadCaptureModal isOpen={isModalOpen} onClose={closeModal} />
       </div>
