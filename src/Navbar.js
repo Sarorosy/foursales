@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="bg-black text-white p-4 md:py-8 md:px-8 overflow-y-hidden border-b-2 border-white">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="https://foursales.vercel.app" className="text-2xl font-bold">
+        <a href="https://socialrecoveries.com" className="text-2xl font-bold">
           <img 
             src={logo} 
             alt="logo" 
@@ -29,7 +29,7 @@ export default function Navbar() {
           >
             <div className="w-full h-[1px] bg-white" />
             <a
-              href="https://foursales.vercel.app/about-us"
+              href="https://socialrecoveries.com/about-us"
               className="hover:text-gray-300 transition-colors raleway font-semibold"
             >
               ABOUT US
@@ -46,7 +46,7 @@ export default function Navbar() {
           >
             <div className="w-full h-[1px] bg-white" />
             <a
-              href="https://foursales.vercel.app/#contact-us"
+              href="https://socialrecoveries.com/#contact-us"
               className="hover:text-gray-300 transition-colors raleway font-semibold"
             >
               CONTACT US
@@ -63,7 +63,7 @@ export default function Navbar() {
           >
             <div className="w-full h-[1px] bg-white" />
             <a
-              href="https://foursales.vercel.app/privacy-policy"
+              href="https://socialrecoveries.com/privacy-policy"
               className="hover:text-gray-300 transition-colors raleway font-semibold"
             >
               PRIVACY POLICY
@@ -80,7 +80,7 @@ export default function Navbar() {
           >
             <div className="w-full h-[1px] bg-white" />
             <a
-              href="https://foursales.vercel.app/terms-of-service"
+              href="https://socialrecoveries.com/terms-of-service"
               className="hover:text-gray-300 transition-colors raleway font-semibold"
             >
               TERMS OF SERVICE
@@ -97,7 +97,7 @@ export default function Navbar() {
           <button
             className="bg-white text-black px-6 py-3 text-lg flex items-center space-x-3 border border-black hover:scale-75 hover:bg-black hover:text-white hover:border-white transition-transform duration-300 ease-in-out"
             style={{ boxShadow: '4px 4px 0px white' }}
-            onClick={() => window.location.href = "https://foursales.vercel.app/#contact-us"}
+            onClick={() => window.location.href = "https://socialrecoveries.com/#contact-us"}
           >
             <Rocket className="h-5 w-5" />
             <span>CONTACT US</span>
@@ -126,7 +126,7 @@ export default function Navbar() {
 
           <div className="flex flex-col items-start mt-8 space-y-4 ml-8">
             <a
-              href="https://foursales.vercel.app/#about-us"
+              href="https://socialrecoveries.com/#about-us"
               className="text-2xl hover:text-gray-300 transition-colors raleway font-semibold"
               onClick={toggleMenu} // Close the menu when a link is clicked
             >
@@ -135,7 +135,7 @@ export default function Navbar() {
             <hr className="w-full h-1 bg-gray-800 border-none my-2" />
 
             <a
-              href="https://foursales.vercel.app/#contact-us"
+              href="https://socialrecoveries.com/#contact-us"
               className="text-2xl hover:text-gray-300 transition-colors raleway font-semibold"
               onClick={toggleMenu} // Close the menu when a link is clicked
             >
@@ -144,7 +144,7 @@ export default function Navbar() {
             <hr className="w-full h-1 bg-gray-800 border-none my-2" />
 
             <a
-              href="https://foursales.vercel.app/privacy-policy"
+              href="https://socialrecoveries.com/privacy-policy"
               className="text-2xl hover:text-gray-300 transition-colors raleway font-semibold"
               onClick={toggleMenu} // Close the menu when a link is clicked
             >
@@ -153,7 +153,7 @@ export default function Navbar() {
             <hr className="w-full h-1 bg-gray-800 border-none my-2" />
 
             <a
-              href="https://foursales.vercel.app/terms-of-service"
+              href="https://socialrecoveries.com/terms-of-service"
               className="text-2xl hover:text-gray-300 transition-colors raleway font-semibold"
               onClick={toggleMenu} // Close the menu when a link is clicked
             >
@@ -164,7 +164,7 @@ export default function Navbar() {
             <button
               className="bg-white text-black px-6 py-3 text-lg flex items-center space-x-3 border border-black hover:scale-75 hover:bg-black hover:text-white hover:border-white transition-transform duration-300 ease-in-out"
               style={{ boxShadow: '4px 4px 0px white' }}
-              onClick={() => window.location.href = "https://foursales.vercel.app/#contact-us"}
+              onClick={() => window.location.href = "https://socialrecoveries.com/#contact-us"}
             >
               <Rocket className="h-5 w-5" />
               <span>CONTACT US</span>
