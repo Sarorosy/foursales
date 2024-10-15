@@ -97,6 +97,7 @@ export default function Navbar() {
           <button
             className="bg-white text-black px-6 py-3 text-lg flex items-center space-x-3 border border-black hover:scale-75 hover:bg-black hover:text-white hover:border-white transition-transform duration-300 ease-in-out"
             style={{ boxShadow: '4px 4px 0px white' }}
+            onClick={() => window.location.href = "https://foursales.vercel.app/#contact-us"}
           >
             <Rocket className="h-5 w-5" />
             <span>CONTACT US</span>
@@ -163,6 +164,7 @@ export default function Navbar() {
             <button
               className="bg-white text-black px-6 py-3 text-lg flex items-center space-x-3 border border-black hover:scale-75 hover:bg-black hover:text-white hover:border-white transition-transform duration-300 ease-in-out"
               style={{ boxShadow: '4px 4px 0px white' }}
+              onClick={() => window.location.href = "https://foursales.vercel.app/#contact-us"}
             >
               <Rocket className="h-5 w-5" />
               <span>CONTACT US</span>
