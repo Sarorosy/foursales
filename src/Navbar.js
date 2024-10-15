@@ -29,7 +29,7 @@ export default function Navbar() {
           >
             <div className="w-full h-[1px] bg-white" />
             <a
-              href="https://foursales.vercel.app/#about-us"
+              href="https://foursales.vercel.app/about-us"
               className="hover:text-gray-300 transition-colors raleway font-semibold"
             >
               ABOUT US

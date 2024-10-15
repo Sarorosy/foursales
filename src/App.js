@@ -17,6 +17,7 @@ import ResponsibleFooter from './ResponsibleFooter';
 import LeadCaptureModal from './LeadCaptureModal';
 import PrivacyPolicy from './PrivacyPolicy';
 import TermsOfService from './TermsOfService';
+import AboutUsPage from './AboutUsPage';
 
 function App() {
 
@@ -50,6 +51,7 @@ function App() {
               <ResponsibleFooter />
             </>
           } />
+          <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
         </Routes>
