@@ -95,3 +95,9 @@ body{
   border-right: 0.5em solid transparent;
   border-bottom: 0.5em solid white; /* Triangle color */
 }
+
+              @media (min-width: 768px) {
+                .service-h1 {
+                line-height: 1;
+    }
+  }

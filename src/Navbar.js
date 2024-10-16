@@ -93,7 +93,7 @@ export default function Navbar() {
 
         {/* Contact Us Button */}
         <div className="hidden md:flex items-center space-x-4">
-          <ShoppingBag className="h-8 w-8" />
+          
           <button
             className="bg-white text-black px-6 py-3 text-lg flex items-center space-x-3 border border-black hover:scale-75 hover:bg-black hover:text-white hover:border-white transition-transform duration-300 ease-in-out"
             style={{ boxShadow: '4px 4px 0px white' }}
@@ -126,7 +126,7 @@ export default function Navbar() {
 
           <div className="flex flex-col items-start mt-8 space-y-4 ml-8">
             <a
-              href="https://socialrecoveries.com/#about-us"
+              href="https://socialrecoveries.com/about-us"
               className="text-2xl hover:text-gray-300 transition-colors raleway font-semibold"
               onClick={toggleMenu} // Close the menu when a link is clicked
             >

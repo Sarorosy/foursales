@@ -110,9 +110,18 @@ const Services = () => {
       <div className="container mx-auto text-center">
         <div className="relative mt-14 md:mt-3">
           <div className="relative z-10">
-            <h1 className="text-3xl md:text-[70px] font-bold text-white relative z-20">
+            html
+            Copy code
+            <h1
+              className="text-3xl md:text-[70px] font-bold text-white relative z-20 service-h1"
+              style={{
+                lineHeight: 'normal',
+              }}
+            >
               Social recoveries Specializes in the Following Services:
             </h1>
+
+            
           </div>
         </div>
 
@@ -142,13 +151,13 @@ const Services = () => {
                 {service.description}
               </p>
               <div className="mx-auto text-left">
-              <ul className="text-white list-disc list-inside space-y-1 triangle-list" > {/* Updated text color and added list styles */}
-                {service.details.map((detail, i) => (
-                  <li key={i} className="text-sm" style={{textAlign:'left'}}>
-                    {detail}
-                  </li>
-                ))}
-              </ul>
+                <ul className="text-white list-disc list-inside space-y-1 triangle-list" > {/* Updated text color and added list styles */}
+                  {service.details.map((detail, i) => (
+                    <li key={i} className="text-sm" style={{ textAlign: 'left' }}>
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
