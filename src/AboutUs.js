@@ -102,20 +102,26 @@ const AboutUs = () => {
           >
             {/* Left side content */}
             <div className="text-white text-xl leading-relaxed md:px-8 flex flex-col raleway font-semibold justify-start items-center">
-              <p className="font-bold">
-              We’re leading this agency to help in restoring your social handle
+              
+              <p className="text-gray-600 leading-relaxed">
+                At Social Recoveries, we believe in the power of digital transformation. Our mission is to help businesses
+                unlock their full potential in an increasingly digital world. With creative design, strategic thinking, and a
+                results-driven approach, we create unique solutions that set our customers apart.
               </p>
               <br />
-              <p>
-              Welcome to SocialRecoveries , where we specialize in reviving and restoring Instagram Accounts.
-              At SocialRecoveries, we understand the frustration and challenges that come with losing access to your Instagram account or experiencing a decline in engagement and visibility. That’s why we’re here to provide personalized solutions tailored to your specific needs.
-              </p>
+              <p className="text-gray-600 leading-relaxed">
+            From creating an easy-to-use and visually appealing website to increasing your online visibility with SEO, we
+            focus on creating an online presence that truly reflects your brand. Our team takes a holistic approach,
+            combining innovative website design with a thoughtful digital strategy that drives growth and increases
+            customer engagement.
+          </p>
               <br />
-              <p>
-              Whether you’ve been locked out of your account, fallen victim to hacking, we have the tools and expertise to help you regain control and reignite your presence on Instagram
-              Get in touch with us today and let’s embark on this journey together.
-              </p>
-              <br />
+              <a 
+              href="https://socialrecoveries.com/about-us" 
+              className="text-black bg-white rounded px-4 py-2 mt-4 hover:bg-gray-200 transition duration-300"
+            >
+              Read More
+            </a>
             </div>
 
             {/* Right side video with mask */}
