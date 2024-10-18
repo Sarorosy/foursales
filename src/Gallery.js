@@ -26,7 +26,7 @@ const Gallery = () => {
     gsap.fromTo(
       gcard,
       {
-        rotate: -3,
+        
       },
       {
         scrollTrigger: {
@@ -36,13 +36,13 @@ const Gallery = () => {
           scrub: true, // Smoothly animate based on scroll position
           toggleActions: "play none none reverse",
         },
-        rotate: 40
+        
       }
     );
     gsap.fromTo(
       gcardtwo,
       {
-        rotate: 10,
+        
         top: -20
       },
       {
@@ -53,8 +53,7 @@ const Gallery = () => {
           scrub: true, // Smoothly animate based on scroll position
           toggleActions: "play none none reverse",
         },
-        rotate: 0,
-        scale: 1
+        
 
       }
     );
@@ -92,7 +91,7 @@ const Gallery = () => {
 
   return (
     <>
-      <h1 className="md:hidden mt-10 text-5xl font-bold slideanimate text-white text-left ml-8 mb-10 ">
+      <h1 className=" mt-10 text-5xl font-bold slideanimate text-white text-left ml-8 mb-10 ">
         What Our Clients Say
       </h1>
       <div className="container mx-auto py-8" id="gallery" style={{ overflowX: "hidden" }}>

@@ -6,6 +6,7 @@ const AboutUsPage = () => {
   return (
     <>
       <Navbar />
+      <div className='bg-white w-full'>
       <div className="about-us bg-white max-w-5xl mx-auto py-12 px-6 lg:px-8">
         <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">About Us</h1>
 
@@ -41,6 +42,7 @@ const AboutUsPage = () => {
             relationships that help your brand succeed.
           </p>
         </section>
+      </div>
       </div>
       <ResponsibleFooter />
     </>

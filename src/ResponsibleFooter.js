@@ -9,7 +9,7 @@ const ResponsibleFooter = () => {
             <div className="flex space-x-4">
               
               <a
-                href="#"
+                href="https://www.instagram.com/social.recoveries/"
                 className="hover:text-gray-300"
                 aria-label="Instagram"
               >
